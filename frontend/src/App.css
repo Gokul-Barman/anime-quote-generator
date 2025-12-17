@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+body {
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Dimming layer */
+    url('../dex-ezekiel-IxDPZ-AHfoI-unsplash.jpg');
+    background-size: cover;      /* Scales the image to fill the screen */
+  background-position: center;  /* Keeps the middle of the image visible */
+  background-repeat: no-repeat; /* Prevents the image from tiling */
+  
+  /* Optional: Fixed position so it doesn't move when content grows */
+  background-attachment: fixed; 
+  
+  /* Reset margin so there's no white gap around the edges */
+  margin: 0;
+  height: 100vh;
+}
+
+.quote-box {
+  /* Shape & Centering */
+  width: 90%;
+  max-width: 800px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  /* The "Beautiful" Parts */
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #e1e8ed;        /* Thin, elegant border */
+  border-radius: 24px;              /* Pronounced round corners */
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.05),  /* Subtle inner shadow */
+    0 10px 20px rgba(0, 0, 0, 0.1); /* Soft outer glow */
+  
+  transition: transform 0.3s ease;  /* Smooth movement */
+  /* 2. The 'Mirror' blur effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* For Safari support */
+  
+  /* 3. A thin light border to define the edges */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  /* 4. Rounded corners look best with this style */
+  border-radius: 20px;
+  
+  /* 5. A soft shadow to give it depth */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+  /* Ensure the text is readable */
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  /* Combine with the black outline */
+  -webkit-text-stroke: 1px black;
+  
+}
+
+/* Add a hover effect! */
+.quote-container:hover {
+  transform: translateY(-5px);      /* Lifts the card up when you hover */
+  border-color: #6200ee;            /* Changes border color on hover */
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.btn-css {
+    
+  /* Basic Shape */
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  
+  /* Colors */
+  background: linear-gradient(135deg, #6200ee, #7c4dff);
+  color: white;
+  
+  /* Interaction */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect: Glow and Lift */
+.btn-css:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(98, 0, 238, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Active Effect: Push down when clicked */
+.btn-css:active {
+  transform: translateY(1px);
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  text-align:end;
+  
+ 
+  
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Poppins', sans-serif; /* Using a clean font */
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.footer span {
+  color: #ffde59; /* A golden color */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 222, 89, 0.5);
+}
+.footer-p {
+  padding-right: 5%;
+}
+
+.loading {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  /* Combine with the black outline */
+  -webkit-text-stroke: 1px black;
+}
