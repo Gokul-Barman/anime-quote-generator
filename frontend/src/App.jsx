@@ -9,7 +9,7 @@ function App() {
   const fetchQuote = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("https://anime-quote-generator-ma95.onrender.com/quote");
+      const response = await axios.get("https://api.animechan.io/v1/quotes/random");
       
       const { 
         content,
